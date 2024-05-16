@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.15;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+:root{
+    --backcolor: rgb(228, 228, 228);
+    --bluecolor: rgb(40, 190, 250);
+    --whitecolor: rgb(255, 254, 249);
+    --bluehover: rgb(0, 66, 92);
+}
+
+
+/*
+>>>>>> header start <<<<<<<
+*/
+header{
+    background-color: var(--backcolor);
+    width: auto;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav to center the elements */
+.navibar {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* container of the tittle of the page */
+.navibar__tittle {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 30%;
+}
+
+.navibar__tittle h1 {
+    text-transform: capitalize;
+    font-weight: 1000;
+    font-size: xx-large;
+}
+
+.navibar__span {
+    color: var(--bluecolor);
+    text-transform: uppercase;
+}
+
+/* container for the buttoms */
+.navibar__buttoms {
+    display: flex;
+    justify-content: center;
+    flex: 1 2 65%;
+    margin-top: 15px;
+}
+
+/* unorder list */
+.navibar__ul {
+    width: 100%;
+    display: flex;
+    height: 35px;
+}
+
+/* list elements */
+.navibar__ul li {
+    text-align: center;
+    margin: 0 1%;
+    flex-grow: 1;
+    transition: all .2s;
+}
+
+.navibar__ul li:hover {
+    background-color: var(--whitecolor);
+    border-top: 4px solid var(--bluecolor);
+}
+
+.navibar__ul a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5% 7%;
+    display: inline-block;
+}
+
+/* drod-down menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown__menu {
+    border-bottom: 5px solid var(--bluecolor);
+    background-color: var(--whitecolor);
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: left;
+    display: none;
+    position: absolute;
+}
+
+.dropdown__menu a {
+    padding: 15px 45px 15px 15px;
+}
+
+.dropdown__menu a:hover {
+    color: var(--bluecolor);
+}
+
+.dropdown:hover .dropdown__menu{
+    display: block;
+}
+
+/* this code section its to make a little
+  arrow and rotate 90 degrees
+*/
+
+.arrow {
+    padding-left: 5px;
+    transition: transform .2s, font-weight .2s, margin .0s;
+    display: inline-block;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(90deg);
+    padding-left: 0px;
+    margin-left: 5px;
+    font-weight: bolder;
+}
+
+
+/*
+>>>>>> carrousel banner section start <<<<<<<
+*/
+.carrousel {
+    width: 100%;
+    height: 400px;
+    background-color: var(--bluecolor);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .carrousel elements container */
+.carrousel__container {
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+}
+
+.carrousel__container input {
+    display: none;
+}
+
+/* .carrousel items */
+.carrousel__item {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    transition: 700ms;
+    background-color: rgb(0, 116, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling the text inside the div of the carrousel */
+.carrousel__item p{
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* dots of the .carrousel container */
+.carrousel__dots {
+    margin: 10px;
+    display: flex;
+}
+
+.carrousel__dots label {
+    background: var(--bluehover);
+    margin: 10px 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+/* adding backgropund color and hover
+   to the dots 
+ */
+.carrousel__dots label:hover {
+    background-color: var(--whitecolor);
+}
+
+
+/* with this the div can move */
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -100%;
+}
+
+#radio3:checked~.first {
+    margin-left: -200%;
+}
+
+#radio4:checked~.first {
+    margin-left: -300%;
+}
+
+#radio5:checked~.first {
+    margin-left: -400%;
+}
+
+/* adding color to see the differences 
+   between the div´s
+ */
+.col1 {
+    background-color: rgb(150, 1, 1);
+}
+.col2 {
+    background-color: rgb(150, 138, 3);
+}
+.col3 {
+    background-color: rgb(30, 164, 0);
+}
+.col4 {
+    background-color: rgb(5, 0, 159);
+}
+
+
+/*
+>>>>>> articles section start <<<<<<<
+*/
+.articlesec {
+    background-color: var(--backcolor);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* to center all the elements */
+.articlesec__center {
+    width: 80%;
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* container of the articles and elements */
+.articlesec__elements {
+    margin: 1% 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.artibody1 {
+    flex: 1 1 20%;
+}
+
+.artibody2 {
+    flex: 1 1 20%;
+}
+
+.artibody3 {
+    flex: 1 1 20%;
+}
+
+.artibody4 {
+    flex: 1 1 20%;
+}
+
+/* container for the title of the article and form */
+.articlesec__tittle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.articlesec__tittle h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+}
+
+.articlesec__logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: var(--bluecolor);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* drawing the white lines */
+.articlesec__line {
+    width: 55%;
+    height: 5px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* rotating and positioning the lines */
+.line1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 17px;
+    left: 9px;
+}
+
+.line2 {
+    transform: rotate(-45deg);
+    position: relative;
+    top: 12px;
+    left: 9px;
+}
+
+/* article element */
+.articlesec__text {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* container of the read and arrow */
+.articlesec__read a{
+    color: var(--bluecolor);
+    font-size: 18px;
+}
+
+.articlesec__read a:hover {
+   color: var(--bluehover);
+
+}
+
+.articlesec__read span {
+    color: black;
+    margin-right: 15px;
+}
+
+.articlesec__read a:hover span {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+/* 
+>>>>>> central body section start <<<<<<<
+ */
+
+.center {
+    border: 2px solid rgb(255, 0, 0);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* central slide banner */
+.center__elementcontainer {
+    border: 2px dotted blue;
+    width: 80%;
+    height: 200px;
+    margin: 25px 0;
+}
+
+/* div to containt latest works and slide banner 
+.center__slidecont {
+
+}
+*/
+
+/* arrow latest works and buttoms container */
+.center__alb {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid gray;
+}
+
+
+/* arrow and last works container */
+.center__arrlast {
+    width: 25%;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.center__arrlast div {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--bluecolor);
+}
+
+/* buttoms */
+.center__buttoms {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.center__buttoms div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    flex-shrink: 0;
+    background-color: var(--bluecolor);
+    cursor: pointer;
+}
+
+.center__buttoms div:active {
+    background-color: var(--bluehover);
+}
+
+/* center slide banner */
+.center__slidebanner {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin: 0 0 10px 0;
+    padding: 0 0 15px 0;
+    border-bottom: 2px solid gray
+}
+
+::-webkit-scrollbar {
+      width: 0 !important;
+}
+
+.center__photos {
+    width: 190px;
+    height: 150px;
+    background-color: var(--backcolor);
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+
+/* hover element*/
+.center__hovr {
+    width: 100%;
+    height: 50%;
+    background-color: var(--bluecolor);
+    transform: translate(0,75px);
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.center__photos:hover .center__hovr {
+    transform: translate(0,0);
+}
+
+.center__divb {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--whitecolor);
+    transition: all .2s;
+}
+
+.center__divb:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px var(--whitecolor);
+}
+
+
+/*div to aplly flex to testimonial and our client container */
+.center__testclientflex {
+    border: 2px solid red;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*testimonial container */
+.center__testimonial {
+    border: 2px dotted black;
+    flex: 1 1 49%;
+}
+
+/*our client container */
+.center__ourclient {
+    border: 2px solid blueviolet;
+    flex: 1 1 49%;
+}
+
+
+
+
+
+
+
+
+
