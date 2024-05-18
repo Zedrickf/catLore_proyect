@@ -31,7 +31,7 @@ header{
 
 /* nav to center the elements */
 .navibar {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -155,7 +155,7 @@ header{
 
 /* .carrousel elements container */
 .carrousel__container {
-    width: 80%;
+    width: 85%;
     height: 300px;
     overflow: hidden;
     display: flex;
@@ -259,7 +259,7 @@ header{
 
 /* to center all the elements */
 .articlesec__center {
-    width: 80%;
+    width: 85%;
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -381,7 +381,7 @@ header{
 /* central slide banner */
 .center__elementcontainer {
     border: 2px dotted blue;
-    width: 80%;
+    width: 85%;
     margin: 25px 0;
 }
 
@@ -451,7 +451,6 @@ header{
     scrollbar-width: none;
     margin: 0 0 10px 0;
     padding: 0 0 15px 0;
-    border-bottom: 2px solid gray
 }
 
 ::-webkit-scrollbar {
@@ -496,6 +495,10 @@ header{
 .center__divb:hover {
     cursor: pointer;
     background-color: var(--bluehover);
+}
+
+.center__horizontaline {
+    width: 85%;
 }
 
 
