@@ -382,7 +382,6 @@ header{
 .center__elementcontainer {
     border: 2px dotted blue;
     width: 80%;
-    height: 200px;
     margin: 25px 0;
 }
 
@@ -407,6 +406,7 @@ header{
     width: 25%;
     text-transform: uppercase;
     display: flex;
+    align-items: center;
 }
 
 .center__arrlast div {
@@ -436,7 +436,7 @@ header{
     cursor: pointer;
 }
 
-.center__buttoms div:active {
+.center__buttoms div:hover {
     background-color: var(--bluehover);
 }
 
@@ -495,35 +495,51 @@ header{
 
 .center__divb:hover {
     cursor: pointer;
-    box-shadow: 0 0 20px var(--whitecolor);
+    background-color: var(--bluehover);
 }
 
 
 /*div to aplly flex to testimonial and our client container */
 .center__testclientflex {
-    border: 2px solid red;
+    border: 2px solid rgb(0, 0, 0);
     width: 100%;
-    height: 200px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /*testimonial container */
 .center__testimonial {
-    border: 2px dotted black;
-    flex: 1 1 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 2px dotted rgb(255, 4, 4);
+    flex: 1 1 450px;
 }
 
 /*our client container */
 .center__ourclient {
-    border: 2px solid blueviolet;
-    flex: 1 1 49%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(25, 4, 255);
+    flex: 1 1 450px;
 }
 
+.center__tittlecontent {
+    border: 2px solid rgb(97, 145, 1);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
 
-
-
+.center__tittlecontent div {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--bluecolor);
+}
 
 
 
