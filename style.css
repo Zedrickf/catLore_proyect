@@ -40,6 +40,7 @@ header{
 
 /* container of the tittle of the page */
 .navibar__tittle {
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     flex: 1 1 30%;
@@ -48,7 +49,7 @@ header{
 .navibar__tittle h1 {
     text-transform: capitalize;
     font-weight: 1000;
-    font-size: xx-large;
+    font-size: 2em;
 }
 
 .navibar__span {
@@ -87,7 +88,7 @@ header{
 .navibar__ul a {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 0.7em;
     font-weight: 600;
     padding: 5% 7%;
     display: inline-block;
@@ -111,10 +112,12 @@ header{
 
 .dropdown__menu a {
     padding: 15px 45px 15px 15px;
+    width: 100%;
 }
 
 .dropdown__menu a:hover {
-    color: var(--bluecolor);
+    color: var(--whitecolor);
+    background-color: var(--bluehover);
 }
 
 .dropdown:hover .dropdown__menu{
@@ -144,7 +147,6 @@ header{
 */
 .carrousel {
     width: 100%;
-    height: 400px;
     background-color: var(--bluecolor);
     overflow: hidden;
     display: flex;
@@ -156,7 +158,8 @@ header{
 /* .carrousel elements container */
 .carrousel__container {
     width: 85%;
-    height: 300px;
+    height: 100%;
+    margin-top: 4%;
     overflow: hidden;
     display: flex;
 }
@@ -168,10 +171,10 @@ header{
 /* .carrousel items */
 .carrousel__item {
     width: 100%;
-    height: 100%;
-    flex-shrink: 0;
     transition: 700ms;
+    aspect-ratio: 3;
     background-color: rgb(0, 116, 162);
+    flex: 1 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,18 +190,19 @@ header{
 
 /* dots of the .carrousel container */
 .carrousel__dots {
-    margin: 10px;
+    margin: 10px auto;
     display: flex;
+    justify-content: center;
 }
 
 .carrousel__dots label {
     background: var(--bluehover);
     margin: 10px 15px;
-    width: 20px;
-    height: 20px;
     border-radius: 50%;
     transition: 300ms;
     cursor: pointer;
+    aspect-ratio: 1;
+    flex: 1 0 10%;
 }
 
 /* adding backgropund color and hover
