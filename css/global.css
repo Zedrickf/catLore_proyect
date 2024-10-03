@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.15;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+:root{
+    --backcolor: rgb(228, 228, 228);
+    --bluecolor: rgb(40, 190, 250);
+    --whitecolor: rgb(255, 254, 249);
+    --bluehover: rgb(0, 66, 92);
+}
+
