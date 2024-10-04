@@ -12,7 +12,8 @@
 
     <body>
         <!-- header start -->
-        <header>
+        <header aria-labelledby="heeaderNav">
+            <h4 id="headerNav" style="display: none;">navigation bar</h4>
             
             <nav class="navibar">
                 <div class="navibar__tittle">
@@ -51,7 +52,8 @@
         </header>
 
         <!-- carrousel banner section -->
-        <section class="carrousel">
+        <section class="carrousel" aria-labelledby="sliderElement">
+            <h4 id="slideElement" style="display: none;">Slider of images</h4>
 
             <div class="carrousel__container">
                 
@@ -78,20 +80,21 @@
         </section>
 
         <!-- articles section -->
-        <section class="articlesec">
+        <section class="articlesec" aria-labelledby="articleSection">
+            <h4 id="articleSection" style="display: none;">Section of main articles </h4>
             
             <div class="articlesec__center">
 
-                <div class="articlesec__elements">
+                <section class="articlesec__elements">
 
-                    <div class="articlesec__tittle">
+                    <article class="articlesec__tittle">
                         <div class="articlesec__logo">
                             <!-- drawing the white lines -->
                             <div class="articlesec__line line1"></div>
                             <div class="articlesec__line line2"></div>
                         </div>
                         <h3>tittle one</h3>
-                    </div>
+                    </article>
 
                     <!-- article element -->
                     <article class="articlesec__text">
@@ -105,18 +108,18 @@
                     <div class="articlesec__read">
                         <a href="#"><span>&rsaquo;</span>read more</a>
                     </div>
-                </div>
+                </section>
 
-                <div class="articlesec__elements">
+                <section class="articlesec__elements">
 
-                    <div class="articlesec__tittle">
+                    <article class="articlesec__tittle">
                         <div class="articlesec__logo">
                             <!-- drawing the white lines -->
                             <div class="articlesec__line line1"></div>
                             <div class="articlesec__line line2"></div>
                         </div>
                         <h3>tittle two</h3>
-                    </div>
+                    </article>
 
                     <!-- article element -->
                     <article class="articlesec__text">
@@ -130,20 +133,18 @@
                     <div class="articlesec__read">
                         <a href="#"><span>&rsaquo;</span>read more</a>
                     </div>
-                </div>
+                </section>
 
-                <!-- container of the articles and elements -->
-                <div class="articlesec__elements">
+                <section class="articlesec__elements">
 
-                    <!-- container for the title of the article and form -->
-                    <div class="articlesec__tittle">
+                    <article class="articlesec__tittle">
                         <div class="articlesec__logo">
                             <!-- drawing the white lines -->
                             <div class="articlesec__line line1"></div>
                             <div class="articlesec__line line2"></div>
                         </div>
                         <h3>tittle three</h3>
-                    </div>
+                    </article>
 
                     <!-- article element -->
                     <article class="articlesec__text">
@@ -157,19 +158,18 @@
                     <div class="articlesec__read">
                         <a href="#"><span>&rsaquo;</span>read more</a>
                     </div>
-                </div>
+                </section>
                 
-                <!-- container of the articles and elements -->
-                <div class="articlesec__elements">
+                <section class="articlesec__elements">
 
-                    <div class="articlesec__tittle">
+                    <article class="articlesec__tittle">
                         <div class="articlesec__logo">
                             <!-- drawing the white lines -->
                             <div class="articlesec__line line1"></div>
                             <div class="articlesec__line line2"></div>
                         </div>
                         <h3>tittle four</h3>
-                    </div>
+                    </article>
 
                     <!-- article element -->
                     <article class="articlesec__text">
@@ -183,29 +183,35 @@
                     <div class="articlesec__read">
                         <a href="#"><span>&rsaquo;</span>read more</a>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
 
         <!-- central body section -->
-        <section class="center">
-            <!-- container of the central carrousel banner and elements -->
-            <div class="center__elementcontainer">
-                <!-- div to contain latest works and slide banner -->
+        <main class="center" aria-labelledby="centerMain">
+            <h4 id="centerMain">Elements of the center of the website</h4>
+
+            <section class="center__elementcontainer" aria-labelledby="slideBanner-center">
+                <h4 id="slideBanner-center" style="display: none;">Slider of elements in the center of the website</h4>
+                
                 <div class="center__slidecont">
+
                     <!-- arrow. latest works and buttoms container -->
-                    <div class="center__alb">
+                    <section class="center__alb" aria-label="Buttons to move the central slider">
+
                         <!-- arrow and last works container -->
                         <div class="center__arrlast">
                             <div></div>
                             <h3>latest works</h3>
                         </div> 
+
                         <!-- buttoms -->
                         <div class="center__buttoms">
                             <div></div>
                             <div></div>
                         </div>
-                    </div>
+                    </section>
+
                     <!-- center slide banner -->
                     <div class="center__slidebanner">
                         <div>
@@ -345,7 +351,7 @@
 
                     </div>
                 </div>
-            </div>
+            </section>
 
             <hr class="center__horizontaline">
 
@@ -408,7 +414,8 @@
                     <a href="">download psd</a>
                 </div>
             </div>
-        </section>
+
+        </main>
 
         <!-- footer start -->
         <footer>
