@@ -356,12 +356,6 @@ header{
     margin: 25px 0;
 }
 
-/* div to containt latest works and slide banner 
-.center__slidecont {
-
-}
-*/
-
 /* arrow latest works and buttoms container */
 .center__alb {
     display: flex;
@@ -394,20 +388,22 @@ header{
     width: 25%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 
 }
 
-.center__buttoms div {
-    width: 30px;
-    height: 30px;
+.center__buttoms button {
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     margin-left: 10px;
     flex-shrink: 0;
     background-color: var(--bluecolor);
     cursor: pointer;
+    border: none;
 }
 
-.center__buttoms div:hover {
+.center__buttoms button:hover {
     background-color: var(--bluehover);
 }
 
@@ -429,8 +425,8 @@ header{
 }
 
 .center__photos {
-    width: 190px;
-    height: 150px;
+    width: 10rem;
+    height: 8rem;
     background-color: var(--backcolor);
     display: flex;
     align-items: flex-end;
@@ -456,11 +452,12 @@ header{
 }
 
 .center__divb {
-    width: 35px;
-    height: 35px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-color: var(--whitecolor);
     transition: all .2s;
+    border: none;
 }
 
 .center__divb:hover {
@@ -507,8 +504,8 @@ header{
 }
 
 .center__tittlecontent div {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     margin-right: 15px;
     border-radius: 50%;
     flex-shrink: 0;

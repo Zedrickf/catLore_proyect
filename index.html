@@ -13,17 +13,22 @@
     <body>
         <!-- header start -->
         <header aria-labelledby="heeaderNav">
-            <h4 id="headerNav" style="display: none;">navigation bar</h4>
+            <h2 id="headerNav" >navigation bar</h2>
             
             <nav class="navibar">
-                <div class="navibar__tittle">
-                    <h1>the <span class="navibar__span">web</span> site</h1>
-                </div>
+                <section class="navibar__tittle" aria-labelledby="title-website">
+                    <h3 id="title-website">Main title of the website</h3>
 
-                <div class="navibar__buttoms">
+                    <h1>the <span class="navibar__span">web</span> site</h1>
+                </section>
+
+                <section class="navibar__buttoms" aria-labelledby="nav-options">
+                    <h3 id="nav-options">Options of the navigation bar</h3>
+
                     <ul class="navibar__ul">
                         <li><a href="#">home</a></li>
                         <li><a href="#">about us</a></li>
+
                         <!-- drop-down menu -->
                         <li class="dropdown">
                             <a href="#">services<span class="arrow">&#62;</span></a>
@@ -34,6 +39,8 @@
                                 <a href="#">option 4</a>
                             </div>
                         </li>
+                        
+                        <!-- drop-down menu -->
                         <li class="dropdown">
                             <a href="#">portfolio<span class="arrow">&#62;</span></a>
                             <div class="dropdown__menu">
@@ -43,17 +50,18 @@
                                 <a href="#">option 8</a>
                             </div>
                         </li>
+
                         <li><a href="#">blog</a></li>
                         <li><a href="#">contact us</a></li>
                     </ul>
-                </div>
+                </section>
             </nav>
 
         </header>
 
         <!-- carrousel banner section -->
         <section class="carrousel" aria-labelledby="sliderElement">
-            <h4 id="slideElement" style="display: none;">Slider of images</h4>
+            <h2 id="slideElement" >Slider of images</h2>
 
             <div class="carrousel__container">
                 
@@ -81,118 +89,114 @@
 
         <!-- articles section -->
         <section class="articlesec" aria-labelledby="articleSection">
-            <h4 id="articleSection" style="display: none;">Section of main articles </h4>
+            <h2 id="articleSection" >Section of main articles </h2>
             
             <div class="articlesec__center">
 
-                <section class="articlesec__elements">
+                <!-- First article section -->
+                <article class="articlesec__elements">
 
-                    <article class="articlesec__tittle">
+                    <div class="articlesec__tittle">
                         <div class="articlesec__logo">
                             <!-- drawing the white lines -->
                             <div class="articlesec__line line1"></div>
                             <div class="articlesec__line line2"></div>
                         </div>
                         <h3>tittle one</h3>
-                    </article>
+                    </div>
 
                     <!-- article element -->
-                    <article class="articlesec__text">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quisquam, 
-                            a quidem voluptate ducimus eos earum maiores odit odio accusantium 
-                        </p>
-                    </article>
+                    <p class="articlesec__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quisquam, 
+                        a quidem voluptate ducimus eos earum maiores odit odio accusantium 
+                    </p>
 
                     <!-- container of the read and arrow -->
                     <div class="articlesec__read">
-                        <a href="#"><span>&rsaquo;</span>read more</a>
+                        <a href="#" aria-label="Read more about First article"><span>&rsaquo;</span>read more</a>
                     </div>
-                </section>
+                </article>
 
-                <section class="articlesec__elements">
+                <!-- Second article section -->
+                <article class="articlesec__elements">
 
-                    <article class="articlesec__tittle">
+                    <div class="articlesec__tittle">
                         <div class="articlesec__logo">
                             <!-- drawing the white lines -->
                             <div class="articlesec__line line1"></div>
                             <div class="articlesec__line line2"></div>
                         </div>
-                        <h3>tittle two</h3>
-                    </article>
+                        <h3>tittle one</h3>
+                    </div>
 
                     <!-- article element -->
-                    <article class="articlesec__text">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quisquam, 
-                            a quidem voluptate ducimus eos earum maiores odit odio accusantium 
-                        </p>
-                    </article>
+                    <p class="articlesec__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quisquam, 
+                        a quidem voluptate ducimus eos earum maiores odit odio accusantium 
+                    </p>
 
                     <!-- container of the read and arrow -->
                     <div class="articlesec__read">
-                        <a href="#"><span>&rsaquo;</span>read more</a>
+                        <a href="#" aria-label="Read more about Second article"><span>&rsaquo;</span>read more</a>
                     </div>
-                </section>
+                </article>
 
-                <section class="articlesec__elements">
+                <!-- Third article section -->
+                <article class="articlesec__elements">
 
-                    <article class="articlesec__tittle">
+                    <div class="articlesec__tittle">
                         <div class="articlesec__logo">
                             <!-- drawing the white lines -->
                             <div class="articlesec__line line1"></div>
                             <div class="articlesec__line line2"></div>
                         </div>
-                        <h3>tittle three</h3>
-                    </article>
+                        <h3>tittle one</h3>
+                    </div>
 
                     <!-- article element -->
-                    <article class="articlesec__text">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quisquam, 
-                            a quidem voluptate ducimus eos earum maiores odit odio accusantium 
-                        </p>
-                    </article>
+                    <p class="articlesec__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quisquam, 
+                        a quidem voluptate ducimus eos earum maiores odit odio accusantium 
+                    </p>
 
                     <!-- container of the read and arrow -->
                     <div class="articlesec__read">
-                        <a href="#"><span>&rsaquo;</span>read more</a>
+                        <a href="#" aria-label="Read more about Third article"><span>&rsaquo;</span>read more</a>
                     </div>
-                </section>
+                </article>
                 
-                <section class="articlesec__elements">
+                <!-- Fourth article section -->
+                <article class="articlesec__elements">
 
-                    <article class="articlesec__tittle">
+                    <div class="articlesec__tittle">
                         <div class="articlesec__logo">
                             <!-- drawing the white lines -->
                             <div class="articlesec__line line1"></div>
                             <div class="articlesec__line line2"></div>
                         </div>
-                        <h3>tittle four</h3>
-                    </article>
+                        <h3>tittle one</h3>
+                    </div>
 
                     <!-- article element -->
-                    <article class="articlesec__text">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quisquam, 
-                            a quidem voluptate ducimus eos earum maiores odit odio accusantium 
-                        </p>
-                    </article>
+                    <p class="articlesec__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quisquam, 
+                        a quidem voluptate ducimus eos earum maiores odit odio accusantium 
+                    </p>
 
                     <!-- container of the read and arrow -->
                     <div class="articlesec__read">
-                        <a href="#"><span>&rsaquo;</span>read more</a>
+                        <a href="#" aria-label="Read more about Fourth article"><span>&rsaquo;</span>read more</a>
                     </div>
-                </section>
+                </article>
             </div>
         </section>
 
         <!-- central body section -->
         <main class="center" aria-labelledby="centerMain">
-            <h4 id="centerMain">Elements of the center of the website</h4>
+            <h2 id="centerMain">Elements of the center of the website</h2>
 
-            <section class="center__elementcontainer" aria-labelledby="slideBanner-center">
-                <h4 id="slideBanner-center" style="display: none;">Slider of elements in the center of the website</h4>
+            <article class="center__elementcontainer" aria-labelledby="slideBanner-center">
+                <h3 id="slideBanner-center" >Slider of elements in the center of the website</h3>
                 
                 <div class="center__slidecont">
 
@@ -200,192 +204,186 @@
                     <section class="center__alb" aria-label="Buttons to move the central slider">
 
                         <!-- arrow and last works container -->
-                        <div class="center__arrlast">
+                        <section class="center__arrlast">
                             <div></div>
                             <h3>latest works</h3>
-                        </div> 
+                        </section> 
 
                         <!-- buttoms -->
-                        <div class="center__buttoms">
-                            <div></div>
-                            <div></div>
-                        </div>
+                        <section class="center__buttoms">
+                            <button type="button" aria-label="buttons to move the central slider" role="button"></button>
+                            <button type="button" aria-label="buttons to move the central slider" role="button"></button>
+                        </section>
                     </section>
 
                     <!-- center slide banner -->
-                    <div class="center__slidebanner">
-                        <div>
-                            <div class="center__photos">
-                                <!-- hover element -->
-                                <div class="center__hovr">
-                                    <div class="center__divb">
-                                        <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
-                                        <a href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <section class="center__slidebanner" aria-label="central slider of the website">
 
                         <div>
                             <div class="center__photos">
                                 <!-- hover element -->
                                 <div class="center__hovr">
-                                    <div class="center__divb">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
-                            
                         </div>
 
                         <div>
                             <div class="center__photos">
                                 <!-- hover element -->
                                 <div class="center__hovr">
-                                    <div class="center__divb">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
-                            
                         </div>
 
                         <div>
                             <div class="center__photos">
                                 <!-- hover element -->
                                 <div class="center__hovr">
-                                    <div class="center__divb">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
-                            
                         </div>
 
                         <div>
                             <div class="center__photos">
                                 <!-- hover element -->
                                 <div class="center__hovr">
-                                    <div class="center__divb">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
-                            
-                        </div>
-
-                        <div>
-                            <div class="center__photos">
-                                <!-- hover elemnt -->
-                                <div class="center__hovr">
-                                    <div class="center__divb">
-                                        <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
-                                        <a href="#"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
                         </div>
 
                         <div>
                             <div class="center__photos">
                                 <!-- hover element -->
                                 <div class="center__hovr">
-                                    <div class="center__divb">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
-                            
                         </div>
 
                         <div>
                             <div class="center__photos">
                                 <!-- hover element -->
                                 <div class="center__hovr">
-                                    <div class="center__divb">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
-                            
                         </div>
 
                         <div>
                             <div class="center__photos">
                                 <!-- hover element -->
                                 <div class="center__hovr">
-                                    <div class="center__divb">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
-                                    <div class="center__divb">
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
                                         <a href="#"></a>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
-                            
                         </div>
 
-                    </div>
+                        <div>
+                            <div class="center__photos">
+                                <!-- hover element -->
+                                <div class="center__hovr">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
+                                        <a href="#"></a>
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
+                                        <a href="#"></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="center__photos">
+                                <!-- hover element -->
+                                <div class="center__hovr">
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
+                                        <a href="#"></a>
+                                    </button>
+                                    <button type="button" class="center__divb" role="button" aria-label="buttons for the elements inside the central slider">
+                                        <a href="#"></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
                 </div>
-            </section>
+            </article>
 
             <hr class="center__horizontaline">
 
             <!-- testimonials and our clients contanier -->
-            <div class="center__elementcontainer">
-                <!-- div to aplly flex to testimonial and our client container -->
+            <article class="center__elementcontainer" aria-labelledby="testimonial-center">
+                <h3 id="testimonial-center" >testimonial and our clients section of the website</h3>
+                
                 <div class="center__testclientflex">
-                    <!-- testimonial container -->
-                    <div class="center__testimonial">
+
+                    <section class="center__testimonial" aria-labelledby="testimony-section">
+                        <h4 id="testimony-section" >Section of testimonies</h4>
+
                         <div class="center__tittlecontent">
                             <div></div>
-                            <!-- tiitle of the testimonial container -->
                             <h3>testimonials</h3>
                         </div>
                         
-                        <div>
-                            <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium, 
-                            sunt quo ratione corrupti dicta aspernatur laborum totam ex corporis minus 
-                            unde quia, quod officiis eveniet ea vero, suscipit porro.
-                            unde quia, quod officiis eveniet ea vero, suscipit porro.
-                            </p>
-                        </div>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium, 
+                        sunt quo ratione corrupti dicta aspernatur laborum totam ex corporis minus 
+                        unde quia, quod officiis eveniet ea vero, suscipit porro.
+                        unde quia, quod officiis eveniet ea vero, suscipit porro.
+                        </p>
                         
                         <em>
                             <b>Lorem ipsum dolor sit amet consectetur.com</b>
                         </em>
                         
-                    </div>
+                    </section>
+
                     <!-- our clients container -->
-                    <div class="center__ourclient">
+                    <section class="center__ourclient" aria-labelledby="ourClient-section">
+                        <h4 id="ourClient-section" >Section of our clients</h4>
+
                         <div class="center__tittlecontent">
                             <div></div>
-                            <!--tittle of the our clients container -->
                             <h3>our clients</h3>
                         </div>
                         
@@ -398,101 +396,107 @@
                             <div></div>
                         </div>
                         
-                    </div>
+                    </section>
                 </div>
                 
-            </div>
+            </article>
+
             <!-- download elements container -->
-            <div class="center__elementcontainer">
+            <article class="center__elementcontainer" aria-labelledby="download-section">
+                <h3 id="download-section" >download section of the website</h3>
+                
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusamus iure 
                     laudantium eveniet nobis, sit, iste a voluptates sed architecto iusto velit eaque 
                     neque expedita quis? Placeat minus eos veniam.
                 </p>
-                <div>
+
+                <a href="#" role="button" aria-label="button to download the element">
                     <div></div>
-                    <a href="">download psd</a>
-                </div>
-            </div>
+                    <span>download psd</span>
+                </a>
+            </article>
 
         </main>
 
         <!-- footer start -->
-        <footer>
-            <!-- container to center the elements -->
-            <div>
-                <!-- upper container of the footer -->
-                <div>
-                    <!-- about us info -->
-                    <div>
-                        <!-- about us -->
-                        <div>
-                            <h3>about us</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, commodi nobis 
-                                facilis deserunt necessitatibus tempora. Autem, quisquam? Alias consectetur 
-                                dolorum quaerat omnis, minima, eum laboriosam excepturi voluptas eligendi, 
-                            </p>
-                        </div>
-                        <!-- explore -->
-                        <div>
-                            <h3>explore</h3>
-                            <ul>
-                                <li><a href="#"></a>home</li>
-                                <li><a href="#"></a>about us</li>
-                                <li><a href="#"></a>service</li>
-                                <li><a href="#"></a>portfolio</li>
-                                <li><a href="#"></a>blog</li>
-                            </ul>
-                        </div>
-                        <!-- browse -->
-                        <div>
-                            <h3>browse</h3>
-                            <ul>
-                                <li><a href="#"></a>careers</li>
-                                <li><a href="#"></a>press & media</li>
-                                <li><a href="#"></a>contact us</li>
-                                <li><a href="#"></a>terms of service</li>
-                                <li><a href="#"></a>privacy policy</li>
-                            </ul>
-                        </div>
-                        <!-- contact us -->
-                        <div>
-                            <h3>contact us</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro rem ab 
-                                fuga, suscipit iste dicta at commodi in nam, a voluptatum, pariatur consequatur
-                            </p>
-                        </div>
-                    </div>
-                    <!-- connect with us container -->
-                    <div>
-                        <h3>connect with us</h3>
-                        <!-- social media logos container -->
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- down container of the footer -->
-                <div>
-                    <!-- copyright container -->
-                    <div>
+        <footer aria-labelledby="footer-website">
+            <h2 id="footer-website">footer of the website</h2>
+
+            <div class="footer-container"> 
+
+                <!-- Upper container of the footer -->
+                <article>
+                    
+                    <!-- About Us section -->
+                    <section aria-labelledby="about-us">
+                        <h3 id="about-us">About Us</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Iure ad harum nihil libero. Pariatur illo blanditiis veritatis 
-                            rerum nulla ut sunt nostrum laudantium obcaecati.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, commodi nobis 
+                            facilis deserunt necessitatibus tempora. Autem, quisquam? Alias consectetur 
+                            dolorum quaerat omnis, minima, eum laboriosam excepturi voluptas eligendi.
                         </p>
-                    </div>
-                    <!-- logo container -->
-                    <div>
-                        <div></div>
-                    </div>
+                    </section>
+        
+                    <!-- Explore section -->
+                    <section aria-labelledby="explore">
+                        <h3 id="explore">Explore</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </section>
+        
+                    <!-- Browse section -->
+                    <section aria-labelledby="browse">
+                        <h3 id="browse">Browse</h3>
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press & Media</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </section>
+        
+                    <!-- Contact Us section -->
+                    <section aria-labelledby="contact-us">
+                        <h3 id="contact-us">Contact Us</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro rem ab 
+                            fuga, suscipit iste dicta at commodi in nam, a voluptatum, pariatur consequatur.
+                        </p>
+                    </section>
+                </article>
+        
+                <!-- Connect with Us section -->
+                <article aria-labelledby="connect">
+                    <h3 id="connect">Connect with Us</h3>
+                    <ul class="social-media">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </article>
+            </div>
+        
+            <!-- Lower container of the footer -->
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Iure ad harum nihil libero. Pariatur illo blanditiis veritatis 
+                    rerum nulla ut sunt nostrum laudantium obcaecati.
+                </p>
+                
+                <div class="logo-container">
+                    <div></div>
                 </div>
             </div>
         </footer>

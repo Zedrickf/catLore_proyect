@@ -16,3 +16,23 @@
     --bluehover: rgb(0, 66, 92);
 }
 
+#headerNav,
+#title-website,
+#nav-options,
+#slideElement,
+#articleSection,
+#centerMain,
+#slideBanner-center,
+#testimonial-center,
+#testimony-section,
+#ourClient-section,
+#download-section,
+#footer-website,
+#about-us,
+#explore,
+#browse,
+#contact-us,
+#connect {
+    display: none;
+}
+
