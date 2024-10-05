@@ -30,7 +30,7 @@ header{
 .navibar__tittle h1 {
     text-transform: capitalize;
     font-weight: 1000;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .navibar__span {
@@ -67,6 +67,8 @@ header{
 }
 
 .navibar__ul a {
+    width: 100%;
+    height: 2rem;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 0.7em;
@@ -139,7 +141,7 @@ header{
 /* .carrousel elements container */
 .carrousel__container {
     width: 85%;
-    height: 100%;
+    height: 20rem;
     margin-top: 4%;
     overflow: hidden;
     display: flex;
@@ -267,16 +269,17 @@ header{
 }
 
 .articlesec__tittle h3 {
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 800;
     
 }
 
 .articlesec__logo {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     margin-right: 15px;
+    position: relative;
     background-color: var(--bluecolor);
     border-radius: 50%;
     flex-shrink: 0;
@@ -286,38 +289,36 @@ header{
 .articlesec__line {
     width: 55%;
     height: 5px;
-    border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
     background-color: rgb(255, 255, 255);
 }
 
 /* rotating and positioning the lines */
 .line1 {
     transform: rotate(45deg);
-    position: relative;
+    position: absolute;
     top: 17px;
     left: 9px;
 }
 
 .line2 {
     transform: rotate(-45deg);
-    position: relative;
-    top: 12px;
+    position: absolute;
+    top: 17px;
     left: 9px;
 }
 
 /* article element */
 .articlesec__text {
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 /* container of the read and arrow */
 .articlesec__read a{
     color: var(--bluecolor);
-    font-size: 18px;
+    font-size: 1.15rem;
 }
 
 .articlesec__read a:hover {
@@ -425,8 +426,8 @@ header{
 }
 
 .center__photos {
-    width: 10rem;
-    height: 8rem;
+    width: 12rem;
+    height: 9rem;
     background-color: var(--backcolor);
     display: flex;
     align-items: flex-end;
