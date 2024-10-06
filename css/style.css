@@ -478,14 +478,14 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
 /*testimonial container */
 .center__testimonial {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    border: 2px dotted rgb(255, 4, 4);
+    justify-content: space-between;
     flex: 1 1 450px;
 }
 
@@ -493,12 +493,11 @@ header{
 .center__ourclient {
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(25, 4, 255);
+    gap: 20px;
     flex: 1 1 450px;
 }
 
 .center__tittlecontent {
-    border: 2px solid rgb(97, 145, 1);
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -513,7 +512,19 @@ header{
     background-color: var(--bluecolor);
 }
 
+.center__clientLogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
+.center__clientLogo div {
+    background-color: var(--backcolor);
+    height: 6rem; 
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
 
 
 
