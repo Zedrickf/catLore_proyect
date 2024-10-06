@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (direction === 'left') {
             currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1; // Si es 0, vuelve al último
         } else if (direction === 'right') {
-            currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0; // Si es el último, vuelve al primero
+            currentIndex = (currentIndex < totalSlides - 4) ? currentIndex + 1 : 0; // Si es el último, vuelve al primero
         }
 
         // Calcular el desplazamiento
