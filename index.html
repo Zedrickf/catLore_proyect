@@ -205,10 +205,11 @@
             </div>
         </section>
 
-        <!-- central body section -->
+        <!-- main body section -->
         <main class="center" aria-labelledby="centerMain">
             <h2 id="centerMain">Elements of the center of the website</h2>
 
+            <!-- central carrousel section -->
             <article class="center__elementcontainer" aria-labelledby="slideBanner-center">
                 <h3 id="slideBanner-center" >Slider of elements in the center of the website</h3>
                 
@@ -230,7 +231,7 @@
                         </section>
                     </section>
 
-                    <!-- center slide banner -->
+                    <!-- center carrousel container -->
                     <section class="center__slidebanner" aria-label="central slider of the website">
 
                         <div>
@@ -374,7 +375,7 @@
 
             <hr class="center__horizontaline">
 
-            <!-- testimonials and our clients contanier -->
+            <!-- testimonials and our clients section -->
             <article class="center__elementcontainer" aria-labelledby="testimonial-center">
                 <h3 id="testimonial-center" >testimonial and our clients section of the website</h3>
                 
@@ -450,13 +451,14 @@
         </main>
 
         <!-- footer start -->
-        <footer aria-labelledby="footer-website">
+        <footer class="footer" aria-labelledby="footer-website">
             <h2 id="footer-website">footer of the website</h2>
 
-            <div class="footer-container"> 
+            <!-- Upper container of the footer -->
+            <div class="footer__up" aria-labelledby="footer-upperSection"> 
+                <h3 id="footer-upperSection">Upper section of the footer</h3>
 
-                <!-- Upper container of the footer -->
-                <article>
+                <article class="footer__up-about">
                     
                     <!-- About Us section -->
                     <section aria-labelledby="about-us">
@@ -503,9 +505,9 @@
                 </article>
         
                 <!-- Connect with Us section -->
-                <article aria-labelledby="connect">
+                <article class="footer__up-connect" aria-labelledby="connect">
                     <h3 id="connect">Connect with Us</h3>
-                    <ul class="social-media">
+                    <ul class="footer__socialMedia">
                         <li></li>
                         <li></li>
                         <li></li>
@@ -517,7 +519,8 @@
             </div>
         
             <!-- Lower container of the footer -->
-            <div class="footer-bottom">
+            <div class="footer__bottom" aria-labelledby="footer-bottomSection">
+                <h3 id="footer-bottomSection">bottom section of the footer</h3>
 
                 <p class="copyright">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -529,6 +532,7 @@
                     <div></div>
                 </div>
             </div>
+
         </footer>
 
         <script src="./js/app.js"></script>

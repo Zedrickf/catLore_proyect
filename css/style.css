@@ -199,12 +199,11 @@ header{
 }
 
 .carousel__dt.active {
-    background-color: var(--orangeH); 
-    border: none; 
+    background-color: var(--orangeH);
+    border: none;
 }
 
 
-/* with this the div can move */
 #radio1:checked~.first {
     margin-left: 0;
 }
@@ -225,9 +224,7 @@ header{
     margin-left: -400%;
 }
 
-/* adding color to see the differences 
-   between the div´s
- */
+/* main carrousel elements */
 .col0 {
     background-color: rgb(0, 116, 162);
     position: relative;
@@ -345,7 +342,7 @@ header{
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 800;
-    
+
 }
 
 .articlesec__logo {
@@ -410,8 +407,8 @@ header{
 }
 
 
-/* 
->>>>>> central body section start <<<<<<<
+/*
+>>>>>> main body section start <<<<<<<
  */
 
 .center {
@@ -422,11 +419,15 @@ header{
     align-items: center;
 }
 
-/* central slide banner */
+/* container of the main elements */
 .center__elementcontainer {
     width: 85%;
     margin: 25px 0 55px 0;
 }
+
+/* 
+>>> central carrousel section <<<
+*/
 
 /* arrow latest works and buttoms container */
 .center__alb {
@@ -479,7 +480,7 @@ header{
     background-color: var(--orangeH);
 }
 
-/* center slide banner */
+/* center carrousel container */
 .center__slidebanner {
     display: flex;
     gap: 50px;
@@ -548,12 +549,15 @@ header{
     background-color: var(--yellowC);
 }
 
+/* horizontal line to divide the sections */
 .center__horizontaline {
     width: 85%;
 }
 
 
-/*div to aplly flex to testimonial and our client container */
+/*
+>>> testimonial and our client section <<<
+*/
 .center__testclientflex {
     width: 100%;
     display: flex;
@@ -600,14 +604,16 @@ header{
 
 .center__clientLogo div {
     background-color: var(--backcolor);
-    height: 6rem; 
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); 
+    height: 6rem;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-/*  download elements section  */
+/*
+>>> download elements section <<<
+*/
 .downloadSection {
     border: 2px solid var(--blueC);
     padding: 30px 20px;
@@ -646,4 +652,38 @@ header{
     width: 2rem;
     height: 2rem;
     background-color: var(--orangeC);
+}
+
+
+/*
+>>>>>> footer start <<<<<<<
+*/
+.footer {
+    background-color: var(--backcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__up {
+    width: 85%;
+    margin: 25px 0;
+    display: flex;
+}
+
+.footer__up-about {
+    flex: 1 1 60%;
+}
+
+.footer__up-connect {
+    flex: 1 1 15%;
+}
+
+.footer__socialMedia {
+    background-color: rgb(255, 113, 113);
+}
+
+.footer__bottom {
+    width: 85%;
+    margin: 25px 0;
 }

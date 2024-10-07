@@ -39,7 +39,8 @@
 #explore,
 #browse,
 #contact-us,
-#connect {
+#footer-upperSection,
+#footer-bottomSection {
     display: none;
 }
 
