@@ -12,7 +12,7 @@
 
     <body>
         <!-- header start -->
-        <header aria-labelledby="heeaderNav">
+        <header aria-labelledby="headerNav">
             <h2 id="headerNav" >navigation bar</h2>
             
             <nav class="navibar">
@@ -61,29 +61,28 @@
 
         <!-- carrousel banner section -->
         <section class="carrousel" aria-labelledby="sliderElement">
-            <h2 id="slideElement" >Slider of images</h2>
-
-            <div class="carrousel__container">
-                
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <input type="radio" name="radio-btn" id="radio5">
-                
-                <div class="carrousel__item first"><p>image example 1</p></div>
-                <div class="carrousel__item col1"><p>image example 2</p></div>
-                <div class="carrousel__item col2"><p>image example 3</p></div>
-                <div class="carrousel__item col3"><p>image example 4</p></div>
-                <div class="carrousel__item col4"><p>image example 5</p></div>
+            <h2 id="sliderElement">Slider of images</h2>
+        
+            <div class="carrousel__container" aria-label="elements of the carrousel">
+                <input type="radio" name="radio-btn" id="radio1" aria-label="Slide 1">
+                <input type="radio" name="radio-btn" id="radio2" aria-label="Slide 2">
+                <input type="radio" name="radio-btn" id="radio3" aria-label="Slide 3">
+                <input type="radio" name="radio-btn" id="radio4" aria-label="Slide 4">
+                <input type="radio" name="radio-btn" id="radio5" aria-label="Slide 5">
+        
+                <div class="carrousel__item first" aria-label="element of the main carrousel"><p>Image example 1</p></div>
+                <div class="carrousel__item col1" aria-label="element of the main carrousel"><p>Image example 2</p></div>
+                <div class="carrousel__item col2" aria-label="element of the main carrousel"><p>Image example 3</p></div>
+                <div class="carrousel__item col3" aria-label="element of the main carrousel"><p>Image example 4</p></div>
+                <div class="carrousel__item col4" aria-label="element of the main carrousel"><p>Image example 5</p></div>
             </div>
-
-            <div class="carrousel__dots">
-                <label for="radio1" class="carousel__dt"></label>
-                <label for="radio2" class="carousel__dt"></label>
-                <label for="radio3" class="carousel__dt"></label>
-                <label for="radio4" class="carousel__dt"></label>
-                <label for="radio5" class="carousel__dt"></label>
+        
+            <div class="carrousel__dots" aria-label="buttons of the carrousel">
+                <button type="button" class="carousel__dt" data-target="radio1" tabindex="0" role="button" aria-label="button to move the main carrousel elements"></button>
+                <button type="button" class="carousel__dt" data-target="radio2" tabindex="0" role="button" aria-label="button to move the main carrousel elements"></button>
+                <button type="button" class="carousel__dt" data-target="radio3" tabindex="0" role="button" aria-label="button to move the main carrousel elements"></button>
+                <button type="button" class="carousel__dt" data-target="radio4" tabindex="0" role="button" aria-label="button to move the main carrousel elements"></button>
+                <button type="button" class="carousel__dt" data-target="radio5" tabindex="0" role="button" aria-label="button to move the main carrousel elements"></button>
             </div>
         </section>
 

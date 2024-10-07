@@ -34,3 +34,24 @@ document.addEventListener('DOMContentLoaded', function() {
         moveSlides('right');
     });
 });
+
+
+// Obtener todos los botones y agregar un EventListener
+const buttons = document.querySelectorAll('.carousel__dt');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Eliminar la clase 'active' de todos los botones
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        // Obtener el ID del input de destino desde el atributo data-target
+        const radioId = button.getAttribute('data-target');
+        const radioInput = document.getElementById(radioId);
+
+        // Cambiar el radio-button correspondiente y añadir la clase 'active' al botón
+        if (radioInput) {
+            radioInput.checked = true;
+            button.classList.add('active'); // Marcar el botón como activo
+        }
+    });
+});

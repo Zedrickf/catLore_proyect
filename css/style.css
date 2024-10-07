@@ -34,7 +34,7 @@ header{
 }
 
 .navibar__span {
-    color: var(--bluecolor);
+    color: var(--orangeC);
     text-transform: uppercase;
 }
 
@@ -63,7 +63,7 @@ header{
 
 .navibar__ul li:hover {
     background-color: var(--whitecolor);
-    border-top: 4px solid var(--bluecolor);
+    border-top: 4px solid var(--yellowC);
 }
 
 .navibar__ul a {
@@ -84,7 +84,7 @@ header{
 }
 
 .dropdown__menu {
-    border-bottom: 5px solid var(--bluecolor);
+    border-bottom: 5px solid var(--yellowC);
     background-color: var(--whitecolor);
     min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -99,8 +99,9 @@ header{
 }
 
 .dropdown__menu a:hover {
-    color: var(--whitecolor);
-    background-color: var(--bluehover);
+    color: var(--blackC);
+    background-color: var(--orangeC);
+    font-weight: bold;
 }
 
 .dropdown:hover .dropdown__menu{
@@ -130,7 +131,7 @@ header{
 */
 .carrousel {
     width: 100%;
-    background-color: var(--bluecolor);
+    background-color: var(--blueC);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -178,21 +179,26 @@ header{
     justify-content: center;
 }
 
-.carrousel__dots label {
-    background: var(--bluehover);
-    margin: 10px 15px;
+
+/* styles to the main carousel buttons*/
+.carousel__dt {
+    background-color: var(--yellowC);
+    border: none;
     border-radius: 50%;
-    transition: 300ms;
+    margin: 10px 15px;
     cursor: pointer;
+    transition: all 300ms ease;
     aspect-ratio: 1;
     flex: 1 0 10%;
 }
 
-/* adding backgropund color and hover
-   to the dots 
- */
-.carrousel__dots label:hover {
-    background-color: var(--whitecolor);
+.carousel__dt:hover {
+    background-color: var(--orangeH);
+}
+
+.carousel__dt.active {
+    background-color: var(--orangeH); 
+    border: none; 
 }
 
 
@@ -221,7 +227,7 @@ header{
    between the div´s
  */
 .col1 {
-    background-color: rgb(150, 1, 1);
+    background-color: rgb(150, 1, 130);
 }
 .col2 {
     background-color: rgb(150, 138, 3);
@@ -280,7 +286,7 @@ header{
     height: 2.5rem;
     margin-right: 15px;
     position: relative;
-    background-color: var(--bluecolor);
+    background-color: var(--orangeC);
     border-radius: 50%;
     flex-shrink: 0;
 }
@@ -317,12 +323,12 @@ header{
 
 /* container of the read and arrow */
 .articlesec__read a{
-    color: var(--bluecolor);
+    color: var(--blueT);
     font-size: 1.15rem;
 }
 
 .articlesec__read a:hover {
-   color: var(--bluehover);
+   color: var(--darkBlueC);
 
 }
 
@@ -331,7 +337,7 @@ header{
     margin-right: 15px;
 }
 
-.articlesec__read a:hover span {
+.articlesec__read a:hover {
     font-weight: bolder;
     font-size: 18px;
 }
@@ -381,7 +387,7 @@ header{
     height: 2rem;
     border-radius: 50%;
     flex-shrink: 0;
-    background-color: var(--bluecolor);
+    background-color: var(--orangeC);
 }
 
 /* buttoms */
@@ -399,13 +405,13 @@ header{
     border-radius: 50%;
     margin-left: 10px;
     flex-shrink: 0;
-    background-color: var(--bluecolor);
+    background-color: var(--yellowC);
     cursor: pointer;
     border: none;
 }
 
 .center__buttoms button:hover {
-    background-color: var(--bluehover);
+    background-color: var(--orangeH);
 }
 
 /* center slide banner */
@@ -439,7 +445,7 @@ header{
 .center__hovr {
     width: 100%;
     height: 50%;
-    background-color: var(--bluecolor);
+    background-color: var(--blueC);
     transform: translate(0,75px);
     transition: all .5s;
     display: flex;
@@ -463,7 +469,7 @@ header{
 
 .center__divb:hover {
     cursor: pointer;
-    background-color: var(--bluehover);
+    background-color: var(--yellowC);
 }
 
 .center__horizontaline {
@@ -509,7 +515,7 @@ header{
     margin-right: 15px;
     border-radius: 50%;
     flex-shrink: 0;
-    background-color: var(--bluecolor);
+    background-color: var(--orangeC);
 }
 
 .center__clientLogo {

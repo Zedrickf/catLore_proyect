@@ -10,16 +10,22 @@
 }
 
 :root{
-    --backcolor: rgb(228, 228, 228);
-    --bluecolor: rgb(40, 190, 250);
-    --whitecolor: rgb(255, 254, 249);
-    --bluehover: rgb(0, 66, 92);
+    --backcolor: #e5e5e5;
+    --whitecolor: #ffffff;
+    --bluehover: #370617;
+    --blackC: #000000;
+    --orangeC: #FB8500;
+    --orangeH: #884800;
+    --yellowC: #FFB703;
+    --blueC: #219EBC;
+    --blueT: #026ca2;
+    --darkBlueC: #023047;
 }
 
 #headerNav,
 #title-website,
 #nav-options,
-#slideElement,
+#sliderElement,
 #articleSection,
 #centerMain,
 #slideBanner-center,
