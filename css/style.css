@@ -237,8 +237,10 @@ header{
     position: absolute;
 }
 .col0 img {
-    z-index: 1;
     width: inherit;
+    height: inherit;
+    z-index: 1;
+    object-fit: cover;
 }
 
 .col1 {
@@ -250,8 +252,10 @@ header{
     position: absolute;
 }
 .col1 img {
-    z-index: 1;
     width: inherit;
+    height: inherit;
+    z-index: 1;
+    object-fit: cover;
 }
 
 
@@ -264,8 +268,10 @@ header{
     position: absolute;
 }
 .col2 img {
-    z-index: 1;
     width: inherit;
+    height: inherit;
+    z-index: 1;
+    object-fit: cover;
 }
 
 
@@ -278,8 +284,10 @@ header{
     position: absolute;
 }
 .col3 img {
-    z-index: 1;
     width: inherit;
+    height: inherit;
+    z-index: 1;
+    object-fit: cover;
 }
 
 
@@ -292,8 +300,10 @@ header{
     position: absolute;
 }
 .col4 img {
-    z-index: 1;
     width: inherit;
+    height: inherit;
+    z-index: 1;
+    object-fit: cover;
 }
 
 
@@ -405,7 +415,6 @@ header{
  */
 
 .center {
-    border: 2px solid rgb(255, 0, 0);
     width: auto;
     display: flex;
     flex-direction: column;
@@ -415,9 +424,8 @@ header{
 
 /* central slide banner */
 .center__elementcontainer {
-    border: 2px dotted blue;
     width: 85%;
-    margin: 25px 0;
+    margin: 25px 0 55px 0;
 }
 
 /* arrow latest works and buttoms container */
@@ -500,6 +508,8 @@ header{
 
 .center__photos img {
     width: inherit;
+    height: inherit;
+    object-fit: cover;
     position: absolute;
     z-index: 1;
 }
@@ -545,7 +555,6 @@ header{
 
 /*div to aplly flex to testimonial and our client container */
 .center__testclientflex {
-    border: 2px solid rgb(0, 0, 0);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -561,7 +570,7 @@ header{
     flex: 1 1 450px;
 }
 
-/*our client container */
+/*our client section */
 .center__ourclient {
     display: flex;
     flex-direction: column;
@@ -598,5 +607,43 @@ header{
     align-items: center; 
 }
 
+/*  download elements section  */
+.downloadSection {
+    border: 2px solid var(--blueC);
+    padding: 30px 20px;
+    background-color: var(--blueB);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
 
+.downloadSection__text {
+    flex: 1 1 60%;
+}
 
+.downloadSection__button {
+    flex: 1 5 20%;
+    height: 4rem;
+    border: 2px solid var(--blueC);
+    border-radius: 10px;
+    background-color: var(--blueT);
+}
+
+.downloadSection__link {
+    width: inherit;
+    height: inherit;
+    color: var(--blackC);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.downloadSection__link div {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--orangeC);
+}
