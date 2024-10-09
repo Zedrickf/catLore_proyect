@@ -665,24 +665,60 @@ header{
     align-items: center;
 }
 
+/* upper section of the footer */
 .footer__up {
     width: 85%;
     margin: 25px 0;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer__up-about {
-    flex: 1 1 60%;
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    flex: 1 1 75%;
 }
 
 .footer__up-connect {
     flex: 1 1 15%;
 }
 
-.footer__socialMedia {
-    background-color: rgb(255, 113, 113);
+.footer__up-title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
+.footer__up-ulList {
+    width: 7.5rem;
+}
+
+.footer__up-listElement {
+    margin-bottom: 10px;
+}
+
+.footer__up-listElement a{
+    color: var(--blackC);
+    margin-bottom: 10px;
+}
+
+/* connect with us section */
+.footer__socialMedia {
+    border: 2px solid red;
+    width: 13.5rem;
+    height: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 21px;
+}
+
+.footer__socialMedia li {
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+
+/* bottom section of the footer */
 .footer__bottom {
     width: 85%;
     margin: 25px 0;
