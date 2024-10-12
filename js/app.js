@@ -1,3 +1,7 @@
+const imagenes = document.querySelectorAll('.myImg');
+const botones = document.querySelectorAll('.expanBtn');
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const slideBanner = document.querySelector('.center__slidebanner');
     const slides = slideBanner.children; // Obtener las diapositivas
@@ -53,5 +57,36 @@ buttons.forEach(button => {
             radioInput.checked = true;
             button.classList.add('active'); // Marcar el botón como activo
         }
+    });
+});
+
+
+
+// evento para recorrer todas las imagenes y botones y ampliar la imagen
+botones.forEach((boton, index) => {
+    boton.addEventListener('click', () => {
+        // Crear un contenedor fullscreen
+        const fullscreenContainer = document.createElement('div');
+        fullscreenContainer.classList.add('fullscreen');
+        
+        // Clonar la imagen correspondiente al botón
+        const clonedImage = imagenes[index].cloneNode();
+        fullscreenContainer.appendChild(clonedImage);
+        
+        // Añadir el contenedor a la página
+        document.body.appendChild(fullscreenContainer);
+        
+        // Usar setTimeout para permitir que la clase se aplique antes de mostrarla
+        setTimeout(() => {
+            fullscreenContainer.classList.add('show');
+        }, 10); // Esperar un poco para permitir que la transición funcione
+        
+        // Al hacer clic en el contenedor, cerrarlo
+        fullscreenContainer.addEventListener('click', () => {
+            fullscreenContainer.classList.remove('show'); // Quitar clase 'show'
+            setTimeout(() => {
+                document.body.removeChild(fullscreenContainer); // Eliminar contenedor después de la transición
+            }, 300); // Esperar la duración de la transición antes de eliminar
+        });
     });
 });

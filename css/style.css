@@ -548,13 +548,42 @@ header{
     flex-direction: column;
 }
 
-.center__photos img {
+.center__photos-img {
     width: inherit;
     height: inherit;
     object-fit: cover;
     position: absolute;
     z-index: 1;
+    transition: transform 0.3s ease;
 }
+
+/* styles to expand the image */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.616);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fullscreen.show {
+    opacity: 1;
+}
+
+.fullscreen .center__photos-img {
+    transform: scale(0.5); 
+    max-width: none; 
+    max-height: none; 
+    transition: transform 0.3s ease;
+}
+
 
 /* hover element*/
 .center__hovr {
@@ -587,7 +616,6 @@ header{
 }
 
 /* eye and link icon */
-
 .center__divb-eye {
     width: 2.5rem;
     height: 2.5rem;
