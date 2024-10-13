@@ -19,6 +19,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 /* container of the tittle of the page */
@@ -127,6 +128,14 @@ header{
     font-weight: bolder;
 }
 
+#navibar__hiddenBtn {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--orangeC);
+    position: absolute;
+    left: 95%;
+    display: none;
+}
 
 /*
 >>>>>> carrousel banner section start <<<<<<<
@@ -580,7 +589,8 @@ header{
 .fullscreen .center__photos-img {
     transform: scale(0.5); 
     max-width: none; 
-    max-height: none; 
+    max-height: 90rem; 
+    height: auto;
     transition: transform 0.3s ease;
 }
 
@@ -936,4 +946,57 @@ header{
 .footer__bottom {
     width: 85%;
     margin: 25px 0;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    
+    /* HEADER START */
+    .navibar {
+        flex-wrap: nowrap;
+    }
+
+    .navibar__tittle {
+        position: absolute;
+    }
+    
+    .navibar__buttoms {
+        display: none;
+    }
+
+    .navibar__buttoms.open, .navibar__ul {
+        display: flex;
+    }
+    
+    .navibar__ul {
+        width: 29%;
+        height: 15rem;
+        position: absolute;
+        left: 65.5%;
+        top: -50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navibar__ul li {
+        margin: 0;
+        background-color: var(--whitecolor);
+    }
+    
+    #navibar__hiddenBtn {
+        display: inline-block;
+    }
+
+    .dropdown__menu {
+        z-index: 110;
+        right: 179px;
+        top: 0px;
+    }
+
+    .navibar__ul a {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
 }

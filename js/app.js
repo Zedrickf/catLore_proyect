@@ -90,3 +90,14 @@ botones.forEach((boton, index) => {
         });
     });
 });
+
+//muestra las opciones en el banner 
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('navibar__hiddenBtn')
+    const nav = document.querySelector(".navibar__buttoms");
+
+    menuBtn.addEventListener("click", function() {
+        nav.classList.toggle("open");
+        menuBtn.classList.toggle("open"); // Esto aplica la transformación de las líneas
+    });
+});
