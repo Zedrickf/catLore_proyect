@@ -24,9 +24,6 @@ header{
 
 /* container of the tittle of the page */
 .navibar__tittle {
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
     flex: 1 1 30%;
 }
 
@@ -45,7 +42,7 @@ header{
 .navibar__buttoms {
     display: flex;
     justify-content: center;
-    flex: 1 2 65%;
+    flex: 1 2 60%;
     margin-top: 15px;
 }
 
@@ -89,7 +86,7 @@ header{
 .dropdown__menu {
     border-bottom: 5px solid var(--yellowC);
     background-color: var(--whitecolor);
-    min-width: 140px;
+    min-width: 110px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     text-align: left;
     display: none;
@@ -153,7 +150,7 @@ header{
 /* .carrousel elements container */
 .carrousel__container {
     width: 85%;
-    height: 20rem;
+    height: 23.5rem;
     margin-top: 4%;
     overflow: hidden;
     display: flex;
@@ -166,7 +163,7 @@ header{
 /* .carrousel items */
 .carrousel__item {
     width: 100%;
-    height: 20.5rem;
+    height: 23rem;
     transition: 700ms;
     aspect-ratio: 3;
     flex: 1 0 auto;
@@ -848,6 +845,10 @@ header{
     margin-bottom: 15px;
 }
 
+.footer__up-expBrow {
+    display: flex;
+}
+
 .footer__up-ulList {
     width: 7.5rem;
 }
@@ -970,10 +971,10 @@ header{
     }
     
     .navibar__ul {
-        width: 29%;
+        width: 20%;
         height: 15rem;
         position: absolute;
-        left: 65.5%;
+        left: 75%;
         top: -50%;
         display: flex;
         flex-direction: column;
@@ -990,13 +991,59 @@ header{
 
     .dropdown__menu {
         z-index: 110;
-        right: 179px;
+        right: 100%;
         top: 0px;
     }
 
     .navibar__ul a {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: row-reverse;
+    }
+
+    .arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown:hover .arrow {
+        padding-top: 5px;
+    }
+
+    /* CARROUSEL BANNER */
+    .carrousel__container {
+        height: 18rem;
+    }
+
+    .carrousel__item {
+        height: 17.5rem;
+    }
+
+    /* ARTICLE SECTION */
+    .articlesec__center {
+        flex-direction: column;
+    }
+
+    /* DOWNLOAD ELEMENT SECTION */
+    .downloadSection {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* FOOTER SECTION  */
+    .footer__up-about {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    .footer__up-expBrow {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer__up-connect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
