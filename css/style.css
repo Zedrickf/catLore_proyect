@@ -126,13 +126,94 @@ header{
 }
 
 #navibar__hiddenBtn {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    left: 90%;
+    display: none;
+    border: none;
+    background-color: var(--backcolor);
+}
+
+/* BUTTON STYLE */
+.menu__btn {
+    position: relative;
+    display: block;
+    height: inherit;
+    width: inherit;
+    border: 3px solid var(--orangeC);
+    border-radius: 0;
+    transition: border-radius 300ms ease;
+}
+
+.menu__btn:hover {
+    border-radius: 50%;
+}
+
+.menu__btn.is-open .menu__burger {
+    opacity: 0;
+    transform: translateX(45px);
+}
+
+.menu__btn.is-open .menu__exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu__burger,
+.menu__burger:before,
+.menu__burger:after {
+    display: block;
+    content: '';
+    width: 18px;
+    height: 3px;
     background-color: var(--orangeC);
     position: absolute;
-    left: 95%;
-    display: none;
 }
+
+.menu__burger {
+    left: 8px;
+    top: 15px;
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.menu__burger:before {
+    top: -8px;
+}
+
+.menu__burger:after {
+    top: 8px;
+}
+
+.menu__exit:before,
+.menu__exit:after {
+    display: block;
+    content: '';
+    width: 22px;
+    height: 3px;
+    background-color: var(--orangeC);
+    position: absolute;
+}
+
+.menu__exit {
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    transform: translateX(-45px);
+    opacity: 0;
+    transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.menu__exit:before {
+    transform: rotate(45deg);
+}
+
+.menu__exit:after {
+    transform: rotate(-45deg);
+}
+
 
 /*
 >>>>>> carrousel banner section start <<<<<<<
@@ -974,7 +1055,7 @@ header{
         width: 20%;
         height: 15rem;
         position: absolute;
-        left: 75%;
+        left: 70%;
         top: -50%;
         display: flex;
         flex-direction: column;
@@ -1019,9 +1100,17 @@ header{
         height: 17.5rem;
     }
 
+    /* SLIDER CENTER SECTION */
+    .fullscreen .center__photos-img {
+        transform: scale(0.8);
+        position: relative;
+        bottom: 15%;
+    }
+
     /* ARTICLE SECTION */
     .articlesec__center {
         flex-direction: column;
+        gap: 20px;
     }
 
     /* DOWNLOAD ELEMENT SECTION */
@@ -1045,5 +1134,23 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    /* HEADER STAR */
+    .navibar__ul {
+        width: 25%;
+        left: 65%;
+    }
+
+    /* CARROUSEL BANNER */
+    .carrousel__container {
+        height: 15rem;
+    }
+
+    .carrousel__item {
+        height: 14.5rem;
     }
 }

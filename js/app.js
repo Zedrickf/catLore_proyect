@@ -101,3 +101,24 @@ document.addEventListener('DOMContentLoaded', function() {
         menuBtn.classList.toggle("open"); // Esto aplica la transformación de las líneas
     });
 });
+
+//Funcion para dar estilo al boton
+function MenuHandler() {
+    this.menuTrigger = document.querySelector('#menu-trigger');
+    this.menu = document.querySelector('.menu');
+
+    this.toggleMenu();
+}
+
+MenuHandler.prototype.toggleMenu = function() {
+    var self = this;
+    this.menuTrigger.addEventListener('click', function() {
+        self.menuTrigger.classList.toggle('is-open');
+        self.menu.classList.toggle('is-open');
+    });
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuHandler = new MenuHandler();
+});
+
